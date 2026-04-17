@@ -1,0 +1,75 @@
+- generic:
+  - generic:
+    - banner:
+      - button:
+        - img
+        - generic: Settings
+      - combobox:
+        - generic: MiniMax
+        - img
+    - main:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=2]: Original Text
+              - generic:
+                - textbox:
+                  - /placeholder: Paste your text here...
+              - generic:
+                - generic:
+                  - generic: 0 segments
+                  - generic: 0 translated
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=2]: Translated Text
+              - generic:
+                - generic: Translated text will appear here
+              - generic:
+                - generic:
+                  - generic: 0 segments
+                  - generic: 0 completed
+        - generic:
+          - generic:
+            - generic:
+              - generic: "Min chars:"
+              - spinbutton: "200"
+            - generic:
+              - generic: "Max chars:"
+              - spinbutton: "500"
+            - button [disabled]: Translate All
+  - alert
+  - dialog:
+    - generic:
+      - heading [level=2]: API Settings
+      - paragraph: Configure your translation API endpoint and credentials.
+    - generic:
+      - generic:
+        - generic: API Endpoint
+        - textbox:
+          - /placeholder: https://api.minimax.chat/v1/chat/completions
+          - text: https://api.deepseek.com/v1/chat/completions
+      - generic:
+        - generic: API Key
+        - textbox:
+          - /placeholder: Enter your API key
+          - text: sk-0c40c51a35dc4074a6440b297f523b89
+      - generic:
+        - generic: Model
+        - combobox [expanded]:
+          - generic: MiniMax
+          - img
+    - generic:
+      - button: Cancel
+      - button: Save
+    - button:
+      - img
+      - generic: Close
+  - listbox [ref=e129]:
+    - option "MiniMax" [active] [selected] [ref=e130]:
+      - img [ref=e133]
+      - generic [ref=e135]: MiniMax
+    - option "DeepSeek" [ref=e136]:
+      - generic [ref=e138]: DeepSeek

@@ -1,0 +1,33 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - button "Settings" [ref=e4] [cursor=pointer]:
+        - img [ref=e5]
+        - generic [ref=e8]: Settings
+      - combobox [ref=e9] [cursor=pointer]:
+        - generic: DeepSeek
+        - img [ref=e10]
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - textbox "Paste your text here to segment..." [ref=e16]
+            - generic [ref=e17]:
+              - button "Segment" [disabled]
+              - button "Translate All" [disabled]
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: "Min chars:"
+              - spinbutton "Min chars:" [ref=e21]: "20"
+            - generic [ref=e22]:
+              - generic [ref=e23]: "Max chars:"
+              - spinbutton "Max chars:" [ref=e24]: "500"
+            - generic [ref=e25]: 0 segments
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Original Text
+            - generic [ref=e30]: Segmented text will appear here
+          - generic [ref=e31]:
+            - generic [ref=e32]: Translated Text
+            - generic [ref=e34]: Translation will appear here
+  - alert [ref=e35]

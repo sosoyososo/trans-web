@@ -1,0 +1,87 @@
+[    1814ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/:0
+[    1935ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[    1956ms] Error: Module not found: Can't resolve '@/components/ui/textarea'
+   8 | import { Input } from "@/components/ui/input";
+   9 | import { Label } from "@/components/ui/label";
+> 10 | import { Textarea } from "@/components/ui/textarea";
+     | ^
+  11 | import { AlertCircle, Loader2, Check, RotateCw } from "lucide-react";
+  12 | import { cn } from "@/lib/utils";
+  13 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/page.tsx
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at getNotFoundError (file:///Users/karsa/proj/trans-web/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js:124:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getModuleBuildError (file:///Users/karsa/proj/trans-web/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/webpackModuleError.js:104:27)
+    at async (file:///Users/karsa/proj/trans-web/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:29:49)
+    at async (file:///Users/karsa/proj/trans-web/node_modules/next/dist/build/webpack/plugins/wellknown-errors-plugin/index.js:27:21)
+[    1955ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[    1957ms] [ERROR] ./components/translation-panel.tsx:10:1
+Module not found: Can't resolve '@/components/ui/textarea'
+   8 | import { Input } from "@/components/ui/input";
+   9 | import { Label } from "@/components/ui/label";
+> 10 | import { Textarea } from "@/components/ui/textarea";
+     | ^
+  11 | import { AlertCircle, Loader2, Check, RotateCw } from "lucide-react";
+  12 | import { cn } from "@/lib/utils";
+  13 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/page.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[    1958ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3001/favicon.ico:0
+[   15620ms] [ERROR] ./components/translation-panel.tsx:10:1
+Module not found: Can't resolve '@/components/ui/textarea'
+   8 | import { Input } from "@/components/ui/input";
+   9 | import { Label } from "@/components/ui/label";
+> 10 | import { Textarea } from "@/components/ui/textarea";
+     | ^
+  11 | import { AlertCircle, Loader2, Check, RotateCw } from "lucide-react";
+  12 | import { cn } from "@/lib/utils";
+  13 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/page.tsx @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/internal/helpers/hydration-error-info.js:62
+[   15620ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   16153ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/_next/static/webpack/459197e259ffadcf.webpack.hot-update.json:0
+[   16153ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:347
+[   16634ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/:0
+[   16727ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///./node_modules/react-dom/cjs/react-dom.development.js:29889
+[   16733ms] SyntaxError: Unexpected non-whitespace character after JSON at position 361
+    at JSON.parse (<anonymous>)
+    at loadManifest (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/load-manifest.js:36:25)
+    at loadManifestWithRetries (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/load-components.js:40:51)
+    at async loadComponentsImpl (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/load-components.js:79:100)
+    at async DevServer.findPageComponentsImpl (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/next-server.js:709:36)
+    at async DevServer.findPageComponents (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/base-server.js:2118:26)
+    at async pipe.req.req (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/base-server.js:2043:30)
+    at async DevServer.pipeImpl (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/next-server.js:287:21)
+    at async DevServer.handleRequestImpl (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/base-server.js:817:17)
+    at async (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/dev/next-dev-server.js:339:20)
+    at async Span.traceAsyncFn (file:///Users/karsa/proj/trans-web/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/lib/router-server.js:173:21)
+    at async handleRequest (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/lib/router-server.js:350:24)
+    at async requestHandlerImpl (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/lib/router-server.js:374:13)
+    at async Server.requestListener (file:///Users/karsa/proj/trans-web/node_modules/next/dist/server/lib/start-server.js:141:13)
+[   16735ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:38
+[   26567ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:221
+[   26783ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3001/_next/static/webpack/459197e259ffadcf.webpack.hot-update.json:0
+[   26784ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:349
+[   27027ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559

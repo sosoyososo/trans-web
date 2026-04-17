@@ -1,0 +1,33 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - button "Settings" [ref=e4] [cursor=pointer]:
+        - img [ref=e5]
+        - generic [ref=e8]: Settings
+      - combobox [ref=e9] [cursor=pointer]:
+        - generic: DeepSeek
+        - img [ref=e10]
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - textbox "Paste your text here to segment..." [ref=e16]: What makes the best email marketing platform. Choosing the right email marketing platform is like choosing a business partner. After all, email usage is projected to reach 5 billion users by 2026, keeping it one of the most vital digital channels for engaging audiences. The best email marketing platforms will have 1) strong infrastructure to make sure your emails get delivered, 2) intuitive email marketing features, and 3) scalable solutions that grow alongside your business. Here are a few key criteria we looked for when creating this list. Free plan. We compared the number of subscribers and email send volumes available on the free plan.
+            - generic [ref=e17]:
+              - button "Segment" [ref=e36] [cursor=pointer]
+              - button "Translate All" [disabled]
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: "Min chars:"
+              - spinbutton "Min chars:" [active] [ref=e21]: "20"
+            - generic [ref=e22]:
+              - generic [ref=e23]: "Max chars:"
+              - spinbutton "Max chars:" [ref=e24]: "500"
+            - generic [ref=e25]: 0 segments
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Original Text
+            - generic [ref=e30]: Segmented text will appear here
+          - generic [ref=e31]:
+            - generic [ref=e32]: Translated Text
+            - generic [ref=e34]: Translation will appear here
+  - alert [ref=e35]

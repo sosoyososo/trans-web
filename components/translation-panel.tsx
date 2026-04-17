@@ -19,7 +19,7 @@ export function TranslationPanel({ config }: TranslationPanelProps) {
   const [text, setText] = useState("");
   const [segments, setSegments] = useState<TextSegment[]>([]);
   const [settings, setSettings] = useState<SegmentSettings>({
-    minLength: 50,
+    minLength: 300,
     maxLength: 500,
   });
   const [inputText, setInputText] = useState("");

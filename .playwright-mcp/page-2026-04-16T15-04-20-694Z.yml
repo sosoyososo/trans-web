@@ -1,0 +1,67 @@
+- generic:
+  - generic:
+    - banner:
+      - button:
+        - img
+        - generic: Settings
+      - combobox:
+        - generic: MiniMax
+        - img
+    - main:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=2]: Original Text
+              - generic:
+                - textbox:
+                  - /placeholder: Paste your text here...
+              - generic:
+                - generic:
+                  - generic: 0 segments
+                  - generic: 0 translated
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=2]: Translated Text
+              - generic:
+                - generic: Translated text will appear here
+              - generic:
+                - generic:
+                  - generic: 0 segments
+                  - generic: 0 completed
+        - generic:
+          - generic:
+            - generic:
+              - generic: "Min chars:"
+              - spinbutton: "200"
+            - generic:
+              - generic: "Max chars:"
+              - spinbutton: "500"
+            - button [disabled]: Translate All
+  - alert
+  - dialog "API Settings" [ref=e45]:
+    - generic [ref=e46]:
+      - heading "API Settings" [level=2] [ref=e47]
+      - paragraph [ref=e48]: Configure your translation API endpoint and credentials.
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]: API Endpoint
+        - textbox "API Endpoint" [active] [ref=e52]:
+          - /placeholder: https://api.minimax.chat/v1/chat/completions
+      - generic [ref=e53]:
+        - generic [ref=e54]: API Key
+        - textbox "API Key" [ref=e55]:
+          - /placeholder: Enter your API key
+      - generic [ref=e56]:
+        - generic [ref=e57]: Model
+        - combobox [ref=e58] [cursor=pointer]:
+          - generic: MiniMax
+          - img [ref=e59]
+    - generic [ref=e61]:
+      - button "Cancel" [ref=e62] [cursor=pointer]
+      - button "Save" [ref=e63] [cursor=pointer]
+    - button "Close" [ref=e64] [cursor=pointer]:
+      - img [ref=e65]
+      - generic [ref=e68]: Close

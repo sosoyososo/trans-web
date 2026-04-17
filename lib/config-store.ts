@@ -10,7 +10,7 @@ const DEFAULT_CONFIG: ApiConfig = {
 };
 
 const DEFAULT_SETTINGS: SegmentSettings = {
-  minLength: 50,
+  minLength: 300,
   maxLength: 500,
 };
 

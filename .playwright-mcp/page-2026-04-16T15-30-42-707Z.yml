@@ -1,0 +1,106 @@
+- generic:
+  - generic:
+    - banner:
+      - button:
+        - img
+        - generic: Settings
+      - combobox:
+        - generic: MiniMax
+        - img
+    - main:
+      - generic:
+        - generic:
+          - generic:
+            - textbox:
+              - /placeholder: Paste your text here to segment...
+            - generic:
+              - button [disabled]: Segment
+              - button: Translate All
+          - generic:
+            - generic:
+              - generic: "Min chars:"
+              - spinbutton: "50"
+            - generic:
+              - generic: "Max chars:"
+              - spinbutton: "500"
+            - generic: 8 segments
+        - generic:
+          - generic:
+            - generic: Original Text
+            - generic:
+              - generic:
+                - paragraph: 这是一个测试句子
+              - generic:
+                - paragraph: 这是第二个句子
+              - generic:
+                - paragraph: 这是第三个句子
+              - generic:
+                - paragraph: 这是第四个句子，比較長一點
+              - generic:
+                - paragraph: 這是第五個句子
+              - generic:
+                - paragraph: 這是第六個句子
+              - generic:
+                - paragraph: 這是第七個句子
+              - generic:
+                - paragraph: 這是第八個句子
+          - generic:
+            - generic: Translated Text
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: Waiting...
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: Waiting...
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: Waiting...
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: Waiting...
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: Waiting...
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: Waiting...
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: Waiting...
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: Waiting...
+  - alert
+  - dialog "API Settings" [ref=e103]:
+    - generic [ref=e104]:
+      - heading "API Settings" [level=2] [ref=e105]
+      - paragraph [ref=e106]: Configure your translation API endpoint and credentials.
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - generic [ref=e109]: API Endpoint
+        - textbox "API Endpoint" [active] [ref=e110]:
+          - /placeholder: https://api.minimax.chat/v1/chat/completions
+      - generic [ref=e111]:
+        - generic [ref=e112]: API Key
+        - textbox "API Key" [ref=e113]:
+          - /placeholder: Enter your API key
+      - generic [ref=e114]:
+        - generic [ref=e115]: Model
+        - combobox [ref=e116] [cursor=pointer]:
+          - generic: MiniMax
+          - img [ref=e117]
+    - generic [ref=e119]:
+      - button "Cancel" [ref=e120] [cursor=pointer]
+      - button "Save" [ref=e121] [cursor=pointer]
+    - button "Close" [ref=e122] [cursor=pointer]:
+      - img [ref=e123]
+      - generic [ref=e126]: Close

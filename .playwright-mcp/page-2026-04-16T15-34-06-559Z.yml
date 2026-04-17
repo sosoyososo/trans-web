@@ -1,0 +1,63 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - button "Settings" [ref=e4] [cursor=pointer]:
+        - img [ref=e5]
+        - generic [ref=e8]: Settings
+      - combobox [ref=e9] [cursor=pointer]:
+        - generic: MiniMax
+        - img [ref=e10]
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - textbox "Paste your text here to segment..." [active] [ref=e16]
+            - generic [ref=e17]:
+              - button "Segment" [disabled]
+              - button "Translate All" [ref=e37] [cursor=pointer]
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: "Min chars:"
+              - spinbutton "Min chars:" [ref=e21]: "50"
+            - generic [ref=e22]:
+              - generic [ref=e23]: "Max chars:"
+              - spinbutton "Max chars:" [ref=e24]: "500"
+            - generic [ref=e25]: 15 segments
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Original Text
+            - generic [ref=e29]:
+              - paragraph [ref=e144]: Send email campaigns in multiple languages plan-availability-banner Sending relevant content in each contact’s preferred language is essential for global brands
+              - paragraph [ref=e146]: With Brevo, you can create one single newsletter that automatically adapts its content based on the language or country code stored in your contact attributes
+              - paragraph [ref=e148]: This approach helps you deliver personalized experiences at scale, without duplicating entire campaigns — saving time while boosting engagement
+              - paragraph [ref=e150]: 🎯 Why create multi-language email campaigns
+              - paragraph [ref=e152]: A multi-language newsletter is a powerful way to improve the customer experience and meet your audience where they are
+              - paragraph [ref=e154]: Instead of managing several separate campaigns, you build one email campaign and tailor content to a specific language or region
+              - paragraph [ref=e156]: "This allows you to: ⏱️ Save time and reduce manual work You design the email once, translate it and that's all"
+              - paragraph [ref=e158]: 🦾 Increase productivity Teams manage fewer campaigns, maintain consistent branding across all languages
+              - paragraph [ref=e160]: 🔁 Boost engagement and conversions Localized content and optimal send times help maximize open rates, click-through rates, and overall campaign performance
+              - paragraph [ref=e162]: 🌎 Improve global customer experience Contacts automatically receive content in the language they prefer, without additional segmentation steps during sending
+              - paragraph [ref=e164]: "Before you start Multi-language email campaigns currently include the following limitations: File-based translations are not supported"
+              - paragraph [ref=e166]: You can either manually enter each translation, or use Aura, our AI assistant, to automatically translate your email
+              - paragraph [ref=e168]: "The multi-language email campaign feature is not available with: A/B test email campaigns Saved sections, you need to create a saved section for each language and insert the appropriate one when adding a translation"
+              - paragraph [ref=e170]: "Step 1: Prepare your contact data Create a contact attribute to store each contact’s preferred language or region, for example LANGUAGE or COUNTRY_CODE"
+              - paragraph [ref=e172]: When you send your campaign, it will automatically use the language or region defined in each contact’s attribute
+          - generic [ref=e31]:
+            - generic [ref=e32]: Translated Text
+            - generic [ref=e33]:
+              - paragraph [ref=e178]: Waiting...
+              - paragraph [ref=e184]: Waiting...
+              - paragraph [ref=e190]: Waiting...
+              - paragraph [ref=e196]: Waiting...
+              - paragraph [ref=e202]: Waiting...
+              - paragraph [ref=e208]: Waiting...
+              - paragraph [ref=e214]: Waiting...
+              - paragraph [ref=e220]: Waiting...
+              - paragraph [ref=e226]: Waiting...
+              - paragraph [ref=e232]: Waiting...
+              - paragraph [ref=e238]: Waiting...
+              - paragraph [ref=e244]: Waiting...
+              - paragraph [ref=e250]: Waiting...
+              - paragraph [ref=e256]: Waiting...
+              - paragraph [ref=e262]: Waiting...
+  - alert [ref=e35]
