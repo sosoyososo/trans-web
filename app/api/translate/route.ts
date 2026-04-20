@@ -23,13 +23,14 @@ export async function POST(request: NextRequest) {
 
     if (model === "minimax") {
       requestBody = {
-        model: "MiniMax-Text-01",
+        model: "MiniMax-M2.7",
         messages: [
           {
             role: "user",
             content: `Translate the following text to Chinese: \n\n${text}`,
           },
         ],
+        reasoning_split: true,
       };
     } else {
       // deepseek
